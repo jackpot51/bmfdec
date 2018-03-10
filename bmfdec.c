@@ -267,8 +267,8 @@ static int process_data(char *data, uint32_t size) {
 static int process_data(char *data, uint32_t size);
 
 int main() {
-  uint32_t pin[0x10000/4];
-  char pout[0x10000];
+  uint32_t pin[0x100000/4];
+  char pout[0x100000];
   ssize_t lin;
   int lout;
   lin = read(0, pin, sizeof(pin));
